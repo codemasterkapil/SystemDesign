@@ -8,7 +8,7 @@
 
 
 ## LLD Links
-1. Liskov Substitution Principal : https://tusharghosh09006.medium.com/liskov-substitution-principle-lsp-744eceb29e8
+[Liskov Substitution Principle](https://tusharghosh09006.medium.com/liskov-substitution-principle-lsp-744eceb29e8)
 
 ## Important Books
 1. https://github.com/ajitpal/BookBank/blob/master/%5BO%60Reilly.%20Head%20First%5D%20-%20Head%20First%20Design%20Patterns%20-%20%5BFreeman%5D.pdf
