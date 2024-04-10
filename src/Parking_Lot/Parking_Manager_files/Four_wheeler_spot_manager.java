@@ -15,12 +15,18 @@ public class Four_wheeler_spot_manager extends Parking_spot_manager{
     }
 
     @Override
-    Parking_spot find_parking_spot(){
-        parking_strategy_type p=new default_entrance();
-        return p.find();
+    public Parking_spot find_parking_spot(){
+//        parking_strategy_type p=new default_entrance();
+//        return p.find();
+        if(ps.size()==0){
+            return null;
+        }else{
+            return ps.get(0);
+        }
+
     };
 
-    static Four_wheeler_spot_manager get_twm(List<Parking_spot> ps){
+    public static Four_wheeler_spot_manager get_fwm(List<Parking_spot> ps){
         if(fwm==null){
             fwm = new Four_wheeler_spot_manager(ps);
         }

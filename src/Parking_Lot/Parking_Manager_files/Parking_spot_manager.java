@@ -7,24 +7,27 @@ import java.util.List;
 
 public abstract class Parking_spot_manager {
 
-    List<Parking_spot> ps;
+    protected List<Parking_spot> ps;
     Parking_spot_manager(List<Parking_spot> ps){
         this.ps=ps;
     }
 
-    abstract Parking_spot find_parking_spot();
+    public abstract Parking_spot find_parking_spot();
 
-    void add_parking_space(){
-
-    }
-
-    void remove_parking_space(){
+    public void add_parking_space(){
 
     }
 
-    void park_vehicle(){
+    public void remove_parking_space(){
 
     }
 
+    public void add_vehicle(Parking_spot p){
+        ps.remove(p);
+    }
+
+    public void remove_vehicle(Parking_spot p){
+        ps.add(p);
+    }
 
 }
