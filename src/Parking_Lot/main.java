@@ -25,6 +25,16 @@ public static void main(String[] args) {
     Two_wheeler_spot_manager.get_twm( Two_wheeler_spots);
     Four_wheeler_spot_manager.get_fwm( Four_wheeler_spots);
 
+    Vehicle v=new Vehicle(vehicle_type.four_wheeler,1234);
+    Entrance_gate eg=new Entrance_gate();
+    Ticket t=eg.find_parking_spot(v,1);
+    System.out.println(t.entry_time+" "+t.spot+" "+t.v+" "+t.spot.id);
+
+    Exit_gate exg=new Exit_gate();
+    int price=exg.Price_calculation(t,3);
+    System.out.println(price);
+
+
 
 
 }

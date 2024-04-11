@@ -2,7 +2,7 @@ package Parking_Lot.parking_spot_files;
 
 public class Parking_spot {
 
-    int id;
+    public int id;
     boolean is_empty;
     int price;
     public Parking_spot(int id,boolean is_empty,int price){
