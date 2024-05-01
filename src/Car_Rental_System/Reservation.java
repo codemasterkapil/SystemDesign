@@ -10,21 +10,13 @@ public class Reservation {
      Vehicle vehicle;
      Date bookingDate;
      Location location;
-
-     public int generateReservationId(User user,Vehicle vehicle){
-
+     int days;
+     public void generateReservationId(User user,Vehicle vehicle,Location location,int days){
         this.user=user;
         this.vehicle=vehicle;
         this.reservationId=12345;
-
-        generateNewLocation();
-
-        return reservationId;
-
+        this.location=location;
+        this.days=days;
      }
-     public void generateNewLocation(){
-          this.location=new Location("delhi cantt","new delhi","India","new delhi");
-     }
-
 
 }

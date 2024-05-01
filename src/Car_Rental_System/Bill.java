@@ -14,5 +14,5 @@ public class Bill {
      double calculateTotalAmount(){
          return 100.00;
     }
-
+    
 }

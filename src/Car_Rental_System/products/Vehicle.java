@@ -9,33 +9,48 @@ public class Vehicle {
     Status status;
 
     int perDaycost;
-    void setVehicle_number(int number){
+
+    public void setVehicle_number(int number)
+    {
         this.vehicle_number=number;
     }
-    void setVehicle_id(int id){
+    public void setVehicle_id(int id)
+    {
         this.vehicle_number=id;
     }
 
-    void setVehicle_vtype(Vehicletype vtype){
+    public void setVehicle(Vehicletype vtype)
+    {
         this.vtype=vtype;
     }
 
-    void setVehicle_status(Status status ){
+    public void setVehicle_status(Status status)
+    {
         this.status=status;
     }
 
-    int getVehicle_number(int number){
-        return number;
+    public void setPerDaycost(int cost)
+    {
+        this.perDaycost=cost;
     }
-    int getVehicle_id(int id){
+    public int getVehicle_number()
+    {
+        return vehicle_number;
+    }
+    public int getVehicle_id()
+    {
         return id;
     }
-
-    Vehicletype getVehicle_vtype(Vehicletype vtype){return vtype;
+    public Vehicletype getVehicle()
+    {
+        return vtype;
     }
-
-    Status getVehicle_status(Status status ){
+    public Status getVehicle_status()
+    {
         return status;
     }
-
+    public int getVehiclecost()
+    {
+        return this.perDaycost;
+    }
 }
