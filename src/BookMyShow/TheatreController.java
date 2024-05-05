@@ -27,7 +27,7 @@ public class TheatreController {
         for (Theatre theatre : theatres) {
             if(theatre.theatreId==theatreId)
             {
-                theatre.bookTicket(hallId,show);
+//                theatre.bookTicket(hallId,show);
             }
         }
     }
