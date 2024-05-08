@@ -19,6 +19,8 @@ public class Main {
 
             State vendingState = vendingMachine.getVendingMachineState();
             vendingState.clickOnInsertCoinButton(vendingMachine);
+            System.out.println("hey!!");
+            vendingState.chooseProduct(vendingMachine,102);
             vendingState = vendingMachine.getVendingMachineState();
             vendingState.insertCoin(vendingMachine, Coin.NICKEL);
             vendingState.insertCoin(vendingMachine, Coin.QUARTER);
